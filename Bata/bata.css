@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  
+}
+
+.navbar-left a,
+.navbar-right a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.navbar-left a:hover,
+.navbar-right a:hover {
+    color: red;
+}
+
+.navbar-center img {
+    height: 40px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 5px 30px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.search-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 14px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.hero {
+    position: relative;
+    height: 700px; 
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2ac9c8101275131.5f1aed41667f5.png');
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 80px; To account for the fixed navbar */
+  }
+  
+  .hero-content {
+    z-index: 2;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    background-color: #f04e23;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #d0431e;
+  }
+  
+  /* Product Grid Section */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns in one row */
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .product-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid #ddd;
+
+    overflow: hidden;
+    text-align: center;
+    background-image: url("https://www.medianews4u.com/wp-content/uploads/2022/09/Bata-launches-%E2%80%98Impressions-Collection-Campaign-featuring-Kartik-Aryan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+    height: 70vh;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+
+ 
+  
+ 
+  
+  .product-item p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #f04e23; /* Bata's signature color */
+  }
+  
+  .product-item .btn {
+    background-color: #f04e23; /* Bata's signature color */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-item .btn:hover {
+    background-color: #d0431e; /* Slightly darker shade on hover */
+  }
+  /* Product Grid Section */
+.shoe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto-adjust number of columns */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .shoe-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+  .shoe-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shoe-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .shoe-item h3 {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+  
+  .shoe-item p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #f04e23; /* Bata's signature color */
+  }
+  
+  .shoe-item .btn {
+    background-color: #f04e23; /* Bata's signature color */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shoe-item .btn:hover {
+    background-color: #d0431e; /* Slightly darker shade on hover */
+  }
+  
+  /* Example for customizing a specific item (Optional) */
+  .shoe1 {
+    background-color: #f8f8f8; /* Example customization for Running Shoes */
+  }
+  
+  .shoe2 {
+    background-color: #e0e0e0; /* Example customization for Casual Sneakers */
+  }
+  
+  .shoe3 {
+    background-color: #d3d3d3; /* Example customization for Leather Boots */
+  }
+  
+  .shoe4 {
+    background-color: #f0f0f0; /* Example customization for Flip Flops */
+  }
+  
+  .shoe5 {
+    background-color: #dcdcdc; /* Example customization for Sport Sandals */
+  }
+  
+

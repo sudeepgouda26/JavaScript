@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with GSAP</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#">Brand</a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+        <div class="cta-button">
+          <button>Get Started</button>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <ul class="mobile-nav-menu">
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">About</a></li>
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Services</a></li>
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Portfolio</a></li>
+        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-cta">
+        <button>Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to Our Website</h1>
+        <p>Scroll down to see the navbar in action</p>
+      </div>
+    </section>
+
+    <!-- Sample content to enable scrolling -->
+    <div class="container">
+      <section class="content-section">
+        <h2>Section 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+      </section>
+      <section class="content-section">
+        <h2>Section 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+      </section>
+      <section class="content-section">
+        <h2>Section 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+      </section>
+      <section class="content-section">
+        <h2>Section 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+      </section>
+      <section class="content-section">
+        <h2>Section 5</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

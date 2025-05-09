@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        min-height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: aquamarine;
+    }
+    nav>div:nth-child(2){
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main{
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: blue;
+    }
+
+    main>div:nth-child(1){
+        width: 60%;
+        height: 80%;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6vw;
+    }
+    main>div:nth-child(1)>div:nth-child(1){
+        height: 90%;
+        width: 40%;
+        background-color: aqua;
+    }
+    main>div:nth-child(1)>div:nth-child(2){
+        height: 90%;
+        width: 40%;
+        background-color: rgb(123, 255, 0);
+    }
+    
+    
+    main>div:nth-child(2){
+        width: 20%;
+        height: 80%;
+        background-color: rgb(42, 149, 165);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main>div:nth-child(2)>div:nth-child(1){
+        width: 80%;
+        height: 40%;
+        background-color: blueviolet;
+    }
+    main>div:nth-child(2)>div:nth-child(2){
+        width: 80%;
+        height: 40%;
+        background-color: rgb(64, 226, 43);
+    }
+
+</style>
+
+<body>
+    <nav>
+        <div>
+            <h1>logo</h1>
+        </div>
+        <div>
+            <h1>home</h1>
+            <h2>cart</h2>
+        </div>
+        <div><input type="text" placeholder="whats going on your mind today"></div>
+
+    </nav>
+    <main>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </main>
+    <script src="./Array.js"></script>
+</body>
+
+</html>
