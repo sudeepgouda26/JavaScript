@@ -17,6 +17,7 @@
    background-color: black;
    display: grid;
    grid-template-columns: repeat(4 ,25%);
+    grid-template-rows: repeat(2, 50%);
    color: beige;
 
 }
@@ -60,4 +61,29 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+#page2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#container2{
+    height: 90%;
+    width: 90%;
+    background-color: black;
+    display: grid;
+grid-template-areas: "hdr hdr hdr hdr hdr hdr hdr hdr"
+                    "hdr1 hdr1 hdr1 hdr1 hdr1 hdr1 hdr1 hdr1"
+                    ;
+    color: beige;
+}
+#grid-item1-2{
+grid-area: "hdr";
+}
+#grid-item2-2{
+grid-area: "hdr1";
 }
