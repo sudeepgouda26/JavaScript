@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="buff"> buffellow</button>
+    <button id="dogi"> dogs</button>
+     <button id="cats"> cats</button>
+      <button id="handi"> handi</button>
+      <div id="result"></div>
+
+      <script>
+    const buffButton = document.getElementById('buff');
+    const dogiButton = document.getElementById('dogi');
+    const catsButton = document.getElementById('cats');
+    const handiButton = document.getElementById('handi');
+
+    buffButton.addEventListener('click',()=>{
+        display("https://tse1.mm.bing.net/th?id=OIP.1xu0K6Htrhjg-67mXKBwaAHaF3&pid=Api")
+    })
+    dogiButton.addEventListener('click', () => {
+        display("https://tse4.mm.bing.net/th?id=OIP.pQsh6xXCnQGXCoKwqJRcrQHaDt&pid=Api&P=0&h=180");
+    });
+    catsButton.addEventListener('click', () => {
+        display("https://tse1.mm.bing.net/th?id=OIP.peA5ILCfebCRr2LRch1BoAHaFj&pid=Api");
+    });
+    handiButton.addEventListener('click', () => {
+        display("https://tse1.mm.bing.net/th?id=OIP.lunciUR6wo3ONy8QpJqiNAHaFH&pid=Api&P=0&h=180");
+    });
+
+    function display(scc){
+        let image = document.createElement('img')
+        image.src=`${scc}`
+       let imageholder =  document.getElementById('result')
+          imageholder.append(image)
+         image.style.height='150px'
+        
+
+    }
+
+
+
+
+      </script>
+
+    
+</body>
+</html>
